@@ -1,0 +1,178 @@
+.about-page {
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    h2 {
+        font-family: 'Shojumaru', sans-serif;
+        color: crimson;
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .img-subtitles-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .img-container {
+
+        
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    border-radius: 10px;
+                    box-shadow: 0 0 5px gray;
+                }
+            }
+        
+            .about-subtitles{
+        
+                p{
+                    max-width: 300px;
+                }
+        
+                .about-icons {
+        
+                    a{
+                        text-decoration: none;
+                        color: aliceblue;
+                        font-size: 1.8rem;
+                        padding-right: 0.9rem;
+                        transition: 0.2s linear;
+        
+                        &:hover{
+                            color: crimson;
+                        }
+                    }
+                }
+        
+                .btn1 {
+                    padding: 10px;
+                    background-color: crimson;
+                    width: 260px;
+                    border-radius: 5px;
+                    border: none;
+                    transition: 0.2s linear;
+        
+                    &:hover {
+                        filter: brightness(0.8);
+                    }
+        
+                    a {
+                        text-decoration: none;
+                        color: aliceblue;
+                    }
+                }
+            }
+        }
+
+        
+    
+        .cube {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            transform-style: preserve-3d;
+            animation: animate 4s linear infinite;
+    
+            @keyframes animate {
+                0%{
+                    transform: rotateX(-30deg) rotateY(0deg);
+                }
+                100%{
+                    transform: rotateX(-30deg) rotateY(360deg);
+                }
+            }
+    
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+    
+                span {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid crimson;
+                    
+                }
+    
+                .face1 {
+                    transform: translateZ(100px);
+                }
+            
+                .face2 {
+                    transform: rotateY(90deg) translateZ(100px);
+                }
+            
+                .face3 {
+                    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+                }
+            
+                .face4 {
+                    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+                }
+    
+                .face5 {
+                    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+                }
+            
+                .face6 {
+                    transform: rotateX(-90deg) translateZ(100px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:820px) {
+    .cube {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .about-content{
+        display: flex;
+        justify-content: center!important;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+
+        .about-subtitles{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            p{
+                max-width: 600px;
+            }
+        }
+    }
+
+    .cube {
+        display: none;
+    }
+}
+
+@media (max-width:320px){
+    .img-container{
+        width: 250px!important;
+
+        img{
+            width: 100%!important;
+        }
+    }
+}

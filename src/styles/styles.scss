@@ -1,0 +1,42 @@
+@import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: aliceblue;
+}
+
+::-webkit-scrollbar {
+  background-color: black;
+  box-shadow: 1px 1px 20px crimson;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: crimson;
+  border-radius: 10px;
+}
+
+// .loader-hidden {
+//     display: none;
+//   }
+  
+  .loader-active {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    // animation: fadeOut 3s;
+    // animation-fill-mode: forwards;
+  }
