@@ -1,6 +1,5 @@
 import './styles.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMap, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FaEnvelope, FaMap, FaPhone } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
 
@@ -25,7 +24,7 @@ export function Contact() {
                 <div className='info-container'>
                     <div className='contact-icons-box'>
                         <div className='box-contact'>
-                            <FontAwesomeIcon className='i' icon={faMap} />
+                            <FaMap className='i'/>
                             <div className='contact-info'>
                                 <h3>Endereço:</h3>
                                 <p>Brasil, Rio de Janeiro</p>
@@ -33,7 +32,7 @@ export function Contact() {
                         </div>
 
                         <div className='box-contact'>
-                            <FontAwesomeIcon className='i' icon={faEnvelope} />
+                            <FaEnvelope className='i'/>
                             <div className='contact-info'>
                                 <h3>E-mail:</h3>
                                 <p>danteopzz@hotmail.com</p>
@@ -41,7 +40,7 @@ export function Contact() {
                         </div>
 
                         <div className='box-contact'>
-                            <FontAwesomeIcon className='i' icon={faPhone} />
+                            <FaPhone className='i' />
                             <div className='contact-info'>
                                 <h3>Número:</h3>
                                 <p>+55 021964757806</p>

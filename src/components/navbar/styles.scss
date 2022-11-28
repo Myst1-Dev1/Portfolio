@@ -21,6 +21,7 @@
         .i {
             color: crimson;
             padding-right: .5rem;
+            width: 2rem;
         }
 
         &:hover {
@@ -40,8 +41,7 @@
 @media (max-width:768px) {
     .nav-bar {
 
-        a{
-
+        a{      
             .i{
                 padding: 0!important;
                 font-size: 13px;
@@ -62,6 +62,12 @@
 
 
     a {
-        padding: 0;
+        padding: 0.2rem!important;
+        flex: 1!important;
+
+        .i{
+            padding: 0!important;
+            font-size: 0.8rem!important;
+        }
     }
 }

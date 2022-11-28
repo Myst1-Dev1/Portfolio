@@ -1,16 +1,15 @@
 import './styles.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faBriefcase, faDesktop, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { FaBook, FaBriefcase, FaDesktop, FaEnvelope, FaHome, FaUser } from 'react-icons/fa';
 
 export function Navbar() {
     return(
         <nav className='nav-bar'>
-            <a href="#inicio"><FontAwesomeIcon className='i' icon={faHome}/><span>Início</span></a>
-            <a href="#sobre"><FontAwesomeIcon className='i' icon={faUser}/><span>Sobre</span></a>
-            <a href="#habilidades"><FontAwesomeIcon className='i' icon={faBook}/><span>Habilidades</span></a>
-            <a href="#servicos"><FontAwesomeIcon className='i' icon={faDesktop}/><span>Serviços</span></a>
-            <a href="#projetos"><FontAwesomeIcon className='i' icon={faBriefcase}/><span>Projetos</span></a>
-            <a href="#contato"><FontAwesomeIcon className='i' icon={faEnvelope}/><span>Contato</span></a>  
+            <a href="#inicio"><FaHome className='i' /><span>Início</span></a>
+            <a href="#sobre"><FaUser className='i' /><span>Sobre</span></a>
+            <a href="#habilidades"><FaBook className='i' /><span>Habilidades</span></a>
+            <a href="#servicos"><FaDesktop className='i' /><span>Serviços</span></a>
+            <a href="#projetos"><FaBriefcase className='i' /><span>Projetos</span></a>
+            <a href="#contato"><FaEnvelope className='i' /><span>Contato</span></a>  
         </nav>
     )
 }

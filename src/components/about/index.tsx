@@ -1,5 +1,4 @@
-import { faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa";
 import './styles.scss';
 const myst = require('../../assets/images/myst.jpg');
 
@@ -19,16 +18,16 @@ export function About() {
                             sênior dotado de conhecimento.
                         </p>
                         <div className="about-icons">
-                        <a target="_blank" rel="noreferrer"  href="https://github.com/Myst1-Dev1"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/myst1-dev/"><FontAwesomeIcon icon={faLinkedin} /></a>
-                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/myst1_dev/"><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a target="_blank" rel="noreferrer"  href="https://github.com/Myst1-Dev1"><FaGithub/></a>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/myst1-dev/"><FaLinkedin /></a>
+                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/myst1_dev/"><FaInstagram /></a>
                         </div>
                         <button className="btn1 mt-2">
                         <a 
                         target="_blank"
                         rel="noreferrer"
                         href="https://www.canva.com/design/DAE2ZI86tZU/FtGwpZgbUYorBDoE4j76sQ/view?utm_content=DAE2ZI86tZU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
-                            Dowload CV
+                            Download CV
                         </a>
                         </button>
                     </div>
