@@ -141,7 +141,7 @@ export function Projects() {
                         <h3>Pokedex</h3>
                         <p>Primeira pratica com react e consumo de API</p>
                         <a 
-                            href="https://myst1-dev1.github.io/pkdex/" 
+                            href="https://myspokedex.netlify.app/" 
                             target="_blank" 
                             rel="noreferrer">
                             <button>Saiba mais</button>
@@ -183,7 +183,7 @@ export function Projects() {
                         <h3>DigiDex</h3>
                         <p>Site consumindo API com filtro e paginação</p>
                         <a 
-                            href="https://myst1-dev1.github.io/DigiDex/" 
+                            href="https://projetodigimon.netlify.app/" 
                             target="_blank" 
                             rel="noreferrer">
                             <button>Saiba mais</button>
@@ -197,7 +197,7 @@ export function Projects() {
                         <h3>Netflix Clone</h3>
                         <p>Clone do netflix para aprimorar o aprendizado em react</p>
                         <a 
-                            href="https://myst1-dev1.github.io/MysFlix/" 
+                            href="https://mysflix.netlify.app/" 
                             target="_blank" 
                             rel="noreferrer">
                             <button>Saiba mais</button>
