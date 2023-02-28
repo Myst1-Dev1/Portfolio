@@ -14,7 +14,6 @@ import './styles.scss';
 export function Header() {
     const [letterClass, setLetterCLass] = useState('text-animate');
     const nameArray = ['','M', 'y', 's', 't', '1'];
-    const jobArray = ['w', 'e', 'b', '', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.'];
 
     useEffect(() =>{
         setTimeout(() => {
@@ -39,10 +38,9 @@ export function Header() {
                     idx={16} />
                         <br />
                     <AnimatedLetters letterClass={letterClass}
-                    strArray={jobArray}
-                    idx={22} />
+                        idx={22} strArray={undefined} />
                     </h1>
-                    <h2>Fullstack Developer</h2>
+                    <h2>Desenvolvedor Fullstack</h2>
                     <a href="#contato">Entre Em Contato</a>
                 </div>
                 <div className='stage-cube-cont'>

@@ -75,6 +75,7 @@ header {
             margin-left: calc(50% - 100px);
             z-index: 1000;
             position: absolute;
+            right: 100px;
         
             div {
                 position: absolute;
@@ -163,6 +164,7 @@ header {
 @media (max-width:761px) {
     header{
         margin-top: 0!important;
+
         .stage-cube-cont{
             margin-top: 80px;
             width: 200px!important;

@@ -29,7 +29,7 @@ export function Projects() {
 
     return(
         <div className="container-fluid projects-page" id='projetos' data-aos="fade-right">
-            <div className='container swiper'>
+            <div className='container'>
                 <h2>Projetos</h2>
                 <Carousel 
                     className='mt-5 container-project' 
@@ -46,12 +46,11 @@ export function Projects() {
                                 <img src={prjt.image} alt="mysferic" />
                             </div>
                             <h3>{prjt.name}</h3>
-                            <p>{prjt.description}</p>
                             <a 
                                 href={prjt.link} 
                                 target="_blank" 
                                 rel="noreferrer">
-                                <button>Saiba mais</button>
+                                    Ver Projeto
                             </a>
                         </div>
                         )
